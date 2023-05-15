@@ -1,0 +1,14 @@
+.radio {
+  display: flex;
+  justify-content: center;
+}
+
+#admin,
+#cliente {
+  font-size: 20px;
+  color: #686868;
+  margin: auto;
+  padding: 1.1rem;
+  padding: 0.2rem;
+  margin: 0 5px;
+}

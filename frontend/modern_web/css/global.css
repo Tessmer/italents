@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Spectral:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Mukta;
+}
+
+body {
+  min-height: 100vh;
+}
+
+:root {
+  --background-clear: beige;
+  --cor-empresa: orange;
+}
+
+.cabecalho {
+  width: 100%;
+  background-image: url(https://thumbs.dreamstime.com/b/esquina-de-comida-mexicana-borde-arriba-abajo-vista-sobre-un-oscuro-fondo-banner-con-espacio-copia-la-est%C3%A1-en-parte-hacia-tacos-191566359.jpg);
+}
+
+.menu .ul-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15rem;
+}
+
+li {
+  list-style: none;
+  padding: 2rem;
+  color: antiquewhite;
+}
+
+#image-usuario {
+  padding-right: 3rem;
+  font-size: 70px;
+}
+
+ul li#image-localizacao {
+  padding-right: 0;
+  padding-left: 3rem;
+  margin-right: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+#image-localizacao {
+  font-size: 60px;
+  color: var(--cor-empresa);
+}
+
+.input-cep {
+  border-radius: 3rem;
+  border: 2px solid rgba(255, 197, 5, 0.943);
+  height: 2rem;
+  text-align: center;
+}
+
+input[type="text"]:focus-within,
+.input-cep:focus-within {
+  outline: 0;
+}
+
+input[type="text"]:focus,
+.input-cep:focus {
+  border: 2px solid rgba(255, 197, 5, 0.4);
+}
+
+#btn-header {
+  background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+  background-color: #ffc477;
+  border-radius: 6px;
+  border: 1px solid #eeb44f;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+
+#btn-header:hover {
+  background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+  background-color: #fb9e25;
+}
+
+#image-logo-empresa {
+  padding-left: 5rem;
+  font-size: 70px;
+}
+
+.footer {
+  background-color: var(--background-clear);
+  margin-top: 5rem;
+}
+
+.footer-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.footer-card a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer-item {
+  margin: 0.5rem;
+}
+
+i.bi-house-fill {
+  font-size: 60px;
+  color: var(--cor-empresa);
+}
+
+i.bi-emoji-smile {
+  font-size: 60px;
+  color: var(--cor-empresa);
+}
+
+i.bi-upc-scan {
+  font-size: 60px;
+  color: var(--cor-empresa);
+}
+
+i.bi-cart {
+  font-size: 60px;
+  color: var(--cor-empresa);
+}
+
+i.bi-stickies {
+  font-size: 60px;
+  color: var(--cor-empresa);
+}
+
+.footer-name-item {
+  font-size: 20px;
+  font-weight: 700;
+  color: gray;
+}
+
+#nome-empresa {
+  font-size: 40px;
+  color: var(--cor-empresa);
+  text-shadow: 2px 2px black;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.2rem;
+}
+
+.login {
+  margin: 1rem 0 0 2.4rem;
+  font-size: 25px;
+  padding: 0.8rem 0 0.8rem 0;
+  color: var(--cor-empresa);
+}
+
+.input {
+  padding: 0.5rem;
+  margin: auto;
+  font-size: 25px;
+  width: 90%;
+  padding: 0.9rem 0 0.9rem 0;
+  border: 2px solid rgba(255, 197, 5, 0.943);
+  text-align: center;
+}
+
+input:focus {
+  outline: 0;
+  border: 2px solid rgba(255, 197, 5, 0.4);
+}
+
+::-webkit-input-placeholder {
+  color: grey;
+  padding: 2rem;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 25px;
+  font-weight: 800;
+  padding: 0.4rem;
+  color: var(--cor-empresa);
+  text-shadow: 1px 1px black;
+}
+
+.valor {
+  font-size: 25px;
+  margin-bottom: 2rem;
+}
+
+.favorite {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.favorite a {
+  text-decoration: none;
+  color: black;
+}
+
+i.bi-chevron-double-left {
+  font-size: 80px;
+  padding-left: 1.5rem;
+}
+
+i.bi-heart-fill {
+  font-size: 70px;
+  text-shadow: 2px 2px 2px black;
+  color: var(--cor-empresa);
+  padding-right: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+  header {
+    display: flex;
+  }
+
+  i.bi-geo-alt,
+  .nome-localizacao,
+  i.bi-card-image {
+    display: none;
+  }
+
+  ul.footer-card {
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .footer-card a {
+    width: 100%;
+  }
+}

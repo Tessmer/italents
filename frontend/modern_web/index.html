@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <title>Início</title>
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <nav class="menu">
+        <ul class="ul-menu">
+          <a href="login.html">
+            <li id="image-usuario"><i class="bi bi-file-person"></i></li>
+          </a>
+
+          <li id="image-localizacao">
+            <i class="bi bi-geo-alt"></i>
+            <input class="input-cep" type="text" placeholder="Digite seu CEP" />
+            <p class="nome-localizacao"></p>
+            <button id="btn-header">OK</button>
+          </li>
+
+          <li id="image-logo-empresa">
+            <i class="bi bi-card-image"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="mensagens-inicio">
+        <h1 id="nome-empresa">iTalents Food</h1>
+        <h2 class="mensagem">Seja bem-vindo!</h2>
+        <h3 class="mensagem">Vamos fazer seu pedido</h3>
+      </section>
+
+      <section id="input">
+        <i class="bi bi-search"></i>
+        <input
+          id="input-text"
+          type="text"
+          placeholder="Procure seu pedido aqui"
+        />
+      </section>
+
+      <section id="categorias">
+        <ul id="categoria-ul">
+          <a href="" class="a-categoria">
+            <li class="categoria">Café da manhã</li>
+          </a>
+          <a href="" class="a-categoria">
+            <li class="categoria">Almoço</li>
+          </a>
+          <a href="" class="a-categoria">
+            <li class="categoria">Lanches</li>
+          </a>
+          <a href="" class="a-categoria">
+            <li class="categoria">Saudável</li>
+          </a>
+        </ul>
+      </section>
+
+      <section id="cards">
+        <div class="card">
+          <img src="assets/muffins.jpg" alt="Logo exemplo" />
+          <h3 class="nome-produto-card">Café + muffins</h3>
+        </div>
+
+        <div class="card">
+          <img src="assets/iogurt.jpg" alt="Logo exemplo" />
+          <h3 class="nome-produto-card">Iogurte natural</h3>
+        </div>
+
+        <div class="card">
+          <img src="assets/pancake.jpg" alt="Logo exemplo" />
+          <h3 class="nome-produto-card">Panquecas</h3>
+        </div>
+
+        <div class="card">
+          <img src="assets/waffle.jpg" alt="Logo exemplo" />
+          <h3 class="nome-produto-card">Waffle</h3>
+        </div>
+      </section>
+
+      <div id="ver-mais">
+        <a href="">Ver mais >> </a>
+      </div>
+
+      <section id="avaliacao">
+        <p id="titulo-avaliacao">AVALIE NOSSO APP</p>
+        <i class="bi bi-hand-thumbs-up"></i>
+        <i class="bi bi-hand-thumbs-down"></i>
+        <span id="frase-avaliacao">Sua avaliação pode gerar cupons</span>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <ul class="footer-card">
+        <a href="index.html">
+          <li id="footer-item">
+            <i class="bi bi-house-fill"></i>
+            <p class="footer-name-item">HOME</p>
+          </li>
+        </a>
+
+        <a href="cadastrar_usuario.html">
+          <li id="footer-item">
+            <i class="bi bi-emoji-smile"></i>
+            <p class="footer-name-item">CADASTRO USUÁRIO</p>
+          </li>
+        </a>
+
+        <a href="cadastro_produto.html">
+          <li id="footer-item">
+            <i class="bi bi-upc-scan"></i>
+            <p class="footer-name-item">CADASTRO PRODUTO</p>
+          </li>
+        </a>
+
+        <a href="carrinho.html">
+          <li id="footer-item">
+            <i class="bi bi-cart"></i>
+            <p class="footer-name-item">CARRINHO</p>
+          </li>
+        </a>
+
+        <a href="produto.html">
+          <li id="footer-item">
+            <i class="bi bi-stickies"></i>
+            <p class="footer-name-item">PRODUTO</p>
+          </li>
+        </a>
+      </ul>
+    </footer>
+  </body>
+</html>

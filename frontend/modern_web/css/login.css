@@ -1,0 +1,29 @@
+.secao-login {
+  width: 60%;
+  margin: 2rem auto;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.secao-login:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.secao-login img {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin: auto;
+}
+
+.btn {
+  padding: 12px 24px 12px 30px;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
