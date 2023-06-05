@@ -24,9 +24,14 @@
 
           <li id="image-localizacao">
             <i class="bi bi-geo-alt"></i>
-            <input class="input-cep" type="text" placeholder="Digite seu CEP" />
+            <input
+              id="cep"
+              class="input-cep"
+              type="text"
+              placeholder="Digite seu CEP"
+            />
             <p class="nome-localizacao"></p>
-            <button id="btn-header">OK</button>
+            <button class="btn-header" onclick="consultaEndereco()">OK</button>
           </li>
 
           <li id="image-logo-empresa">
@@ -92,7 +97,7 @@
 
     <section class="cupom">
       <input type="text" placeholder="CUPOM" class="input-cupom" />
-      <button id="btn-header" class="btn-aplicar">Aplicar</button>
+      <button class="btn-aplicar btn-header">Aplicar</button>
     </section>
 
     <section class="pagamento">
@@ -108,9 +113,7 @@
       </div>
 
       <div class="btn-carrinho">
-        <button id="btn-header" class="btn-carrinho-item">
-          REALIZAR PAGAMENTO
-        </button>
+        <button class="btn-carrinho-item btn-header">REALIZAR PAGAMENTO</button>
       </div>
     </section>
 
@@ -152,5 +155,7 @@
         </a>
       </ul>
     </footer>
+    <script src="./script.js"></script>
+    <script src="./carrinho.js"></script>
   </body>
 </html>

@@ -1,113 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="./css/global.css" />
-  <link rel="stylesheet" href="./css/produto.css" />
-  <link rel="stylesheet" href="./carrinho.css" />
-  <title>Produto</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/produto.css" />
+    <link rel="stylesheet" href="./carrinho.css" />
+    <title>Produto</title>
+  </head>
 
-<body>
-  <header class="cabecalho">
-    <nav class="menu">
-      <ul class="ul-menu">
-        <a href="login.html">
-          <li id="image-usuario"><i class="bi bi-file-person"></i></li>
+  <body>
+    <header class="cabecalho">
+      <nav class="menu">
+        <ul class="ul-menu">
+          <a href="login.html">
+            <li id="image-usuario"><i class="bi bi-file-person"></i></li>
+          </a>
+
+          <li id="image-localizacao">
+            <i class="bi bi-geo-alt"></i>
+            <input
+              id="cep"
+              class="input-cep"
+              type="text"
+              placeholder="Digite seu CEP"
+            />
+            <p class="nome-localizacao"></p>
+            <button class="btn-header" onclick="consultaEndereco()">OK</button>
+          </li>
+
+          <li id="image-logo-empresa">
+            <i class="bi bi-card-image"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="favorite">
+      <a href="index.html"><i class="bi bi-chevron-double-left"></i></a>
+      <i class="bi bi-heart-fill"></i>
+    </section>
+
+    <section class="secao-produto">
+      <h1 id="nome-empresa">NOME DO PRODUTO</h1>
+      <p class="descricao-produto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aut
+        enim illum ipsum cum modi!
+      </p>
+
+      <div>
+        <img
+          src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg"
+          alt="Logo exemplo"
+          id="imagem-produto"
+        />
+        <div class="quantidade-produto">
+          <i class="bi bi-dash-square"></i>
+          <p class="numero-produto">1</p>
+          <i class="bi bi-plus-square"></i>
+        </div>
+      </div>
+
+      <div class="precos-produto">
+        <div class="total">
+          <p class="titulo">Preço unitário</p>
+          <p class="valor">R$ 0000,00</p>
+        </div>
+        <div class="delivery">
+          <p class="titulo">Preço Total</p>
+          <p class="valor">R$ 0000,00</p>
+        </div>
+      </div>
+
+      <div class="btn-carrinho">
+        <button class="btn-add-carrinho" onclick="addCarrinho()">
+          ADICIONAR AO CARRINHO
+        </button>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer">
+      <ul class="footer-card">
+        <a href="index.html">
+          <li id="footer-item">
+            <i class="bi bi-house-fill"></i>
+            <p class="footer-name-item">HOME</p>
+          </li>
         </a>
 
-        <li id="image-localizacao">
-          <i class="bi bi-geo-alt"></i>
-          <input class="input-cep" type="text" placeholder="Digite seu CEP">
-          <button id="btn-header">OK</button>
-        </li>
+        <a href="cadastrar_usuario.html">
+          <li id="footer-item">
+            <i class="bi bi-emoji-smile"></i>
+            <p class="footer-name-item">CADASTRO USUÁRIO</p>
+          </li>
+        </a>
 
-        <li id="image-logo-empresa">
-          <i class="bi bi-card-image"></i>
-        </li>
+        <a href="cadastro_produto.html">
+          <li id="footer-item">
+            <i class="bi bi-upc-scan"></i>
+            <p class="footer-name-item">CADASTRO PRODUTO</p>
+          </li>
+        </a>
+
+        <a href="carrinho.html">
+          <li id="footer-item">
+            <i class="bi bi-cart"></i>
+            <p class="footer-name-item">CARRINHO</p>
+          </li>
+        </a>
+
+        <a href="produto.html">
+          <li id="footer-item">
+            <i class="bi bi-stickies"></i>
+            <p class="footer-name-item">PRODUTO</p>
+          </li>
+        </a>
       </ul>
-    </nav>
-  </header>
-  
-  <section class="favorite">
-    <a href="index.html"><i class="bi bi-chevron-double-left"></i></a>
-    <i class="bi bi-heart-fill"></i>
-  </section>
-
-  <section class="secao-produto">
-    <h1 id="nome-empresa">NOME DO PRODUTO</h1>
-    <p class="descricao-produto">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aut
-      enim illum ipsum cum modi!
-    </p>
-
-    <div>
-      <img src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg"
-        alt="Logo exemplo" id="imagem-produto" />
-      <div class="quantidade-produto">
-        <i class="bi bi-dash-square"></i>
-        <p class="numero-produto">1</p>
-        <i class="bi bi-plus-square"></i>
-      </div>
-    </div>
-
-    <div class="precos-produto">
-      <div class="total">
-
-      <p class="titulo">Preço unitário</p>
-      <p class="valor">R$ 0000,00</p>
-</div>
-<div class="delivery">
-      <p class="titulo">Preço Total</p>
-      <p class="valor">R$ 0000,00</p>
-    </div>
-  </div>
-
-    <div class="btn-carrinho">
-      <button class="btn-add-carrinho"></i>ADICIONAR AO CARRINHO</button>
-    </div>
-  </section>
-
-  <footer id="footer" class="footer">
-    <ul class="footer-card">
-      <a href="index.html">
-        <li id="footer-item">
-          <i class="bi bi-house-fill"></i>
-          <p class="footer-name-item">HOME</p>
-        </li>
-      </a>
-
-      <a href="cadastrar_usuario.html">
-        <li id="footer-item">
-          <i class="bi bi-emoji-smile"></i>
-          <p class="footer-name-item">CADASTRO USUÁRIO</p>
-        </li>
-      </a>
-
-      <a href="cadastro_produto.html">
-        <li id="footer-item">
-          <i class="bi bi-upc-scan"></i>
-          <p class="footer-name-item">CADASTRO PRODUTO</p>
-        </li>
-      </a>
-
-      <a href="carrinho.html">
-        <li id="footer-item">
-          <i class="bi bi-cart"></i>
-          <p class="footer-name-item">CARRINHO</p>
-        </li>
-      </a>
-
-      <a href="produto.html">
-        <li id="footer-item">
-          <i class="bi bi-stickies"></i>
-          <p class="footer-name-item">PRODUTO</p>
-        </li>
-      </a>
-    </ul>
-  </footer>
-</body>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./carrinho.js"></script>
+    <script src="./produto.js"></script>
+  </body>
 </html>

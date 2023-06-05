@@ -23,9 +23,14 @@
 
           <li id="image-localizacao">
             <i class="bi bi-geo-alt"></i>
-            <input class="input-cep" type="text" placeholder="Digite seu CEP" />
+            <input
+              id="cep"
+              class="input-cep"
+              type="text"
+              placeholder="Digite seu CEP"
+            />
             <p class="nome-localizacao"></p>
-            <button id="btn-header">OK</button>
+            <button class="btn-header" onclick="consultaEndereco()">OK</button>
           </li>
 
           <li id="image-logo-empresa">
@@ -41,21 +46,23 @@
 
       <div class="container">
         <label for="" class="login">Nome do produto</label>
-        <input type="text" class="input" />
+        <input id="nome" type="text" class="input" />
 
         <label for="" class="login">Descrição do produto</label>
-        <input type="text" class="input" />
+        <input id="descricao" type="text" class="input" />
 
         <label for="" class="login">Categoria</label>
-        <input type="text" class="input" />
+        <input id="categoria" type="text" class="input" />
 
         <label for="" class="login">Preço unitário</label>
-        <input type="text" class="input" />
+        <input id="unidade" type="text" class="input" />
 
         <label for="" class="login">Código de barras</label>
-        <input type="text" class="input" />
+        <input id="codigo" type="text" class="input" />
 
-        <button id="btn-header" class="btn">CADASTRAR PRODUTO</button>
+        <button class="btn btn-header" onclick="cadastroProduto()">
+          CADASTRAR PRODUTO
+        </button>
       </div>
     </section>
 
@@ -97,5 +104,7 @@
         </a>
       </ul>
     </footer>
+    <script src="./script.js"></script>
+    <script src="./cadastro.js"></script>
   </body>
 </html>

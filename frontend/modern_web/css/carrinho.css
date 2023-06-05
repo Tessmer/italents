@@ -144,7 +144,7 @@ i.bi-trash {
     flex-direction: column;
   }
 
-  #btn-header {
+  .btn-header {
     margin-left: 0;
   }
 

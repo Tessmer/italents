@@ -23,9 +23,14 @@
 
           <li id="image-localizacao">
             <i class="bi bi-geo-alt"></i>
-            <input class="input-cep" type="text" placeholder="Digite seu CEP" />
+            <input
+              id="cep"
+              class="input-cep"
+              type="text"
+              placeholder="Digite seu CEP"
+            />
             <p class="nome-localizacao"></p>
-            <button id="btn-header">OK</button>
+            <button class="btn-header" onclick="consultaEndereco()">OK</button>
           </li>
 
           <li id="image-logo-empresa">
@@ -140,5 +145,7 @@
         </a>
       </ul>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>

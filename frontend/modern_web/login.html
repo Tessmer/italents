@@ -23,9 +23,14 @@
 
           <li id="image-localizacao">
             <i class="bi bi-geo-alt"></i>
-            <input class="input-cep" type="text" placeholder="Digite seu CEP" />
+            <input
+              id="cep"
+              class="input-cep"
+              type="text"
+              placeholder="Digite seu CEP"
+            />
             <p class="nome-localizacao"></p>
-            <button id="btn-header">OK</button>
+            <button class="btn-header" onclick="consultaEndereco()">OK</button>
           </li>
 
           <li id="image-logo-empresa">
@@ -47,21 +52,21 @@
       <div class="container">
         <label for="" class="login">LOGIN</label>
         <input
-          id="myInput"
+          id="emailInput"
           type="text"
           class="input"
-          placeholder="Digite seu user-login"
+          placeholder="Digite seu e-mail"
         />
 
         <label for="" class="login">SENHA</label>
         <input
-          id="myInput"
+          id="passwordInput"
           type="password"
           class="input"
           placeholder="Digite sua senha"
         />
 
-        <button id="btn-header" class="btn">REALIZAR LOGIN</button>
+        <button id="loginAccess" class="btn btn-header">REALIZAR LOGIN</button>
       </div>
     </section>
 
@@ -103,5 +108,8 @@
         </a>
       </ul>
     </footer>
+
+    <script src="./script.js"></script>
+    <script src="./login.js"></script>
   </body>
 </html>

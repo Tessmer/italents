@@ -68,7 +68,7 @@ input[type="text"]:focus,
   border: 2px solid rgba(255, 197, 5, 0.4);
 }
 
-#btn-header {
+.btn-header {
   background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
   background-color: #ffc477;
   border-radius: 6px;
@@ -83,7 +83,7 @@ input[type="text"]:focus,
   margin-left: 2rem;
 }
 
-#btn-header:hover {
+.btn-header:hover {
   background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
   background-color: #fb9e25;
 }
@@ -220,6 +220,7 @@ i.bi-heart-fill {
   text-shadow: 2px 2px 2px black;
   color: var(--cor-empresa);
   padding-right: 1.5rem;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
